@@ -1,7 +1,7 @@
 # Alurakut é um projeto realizado atraves da imersão React, realizado pela Alura
 
 [![Série](https://img.shields.io/badge/rafapcarvalho-Alurakut-blue)](https://github.com/rafapcarvalho/alurakut/)
-[![licence mit](https://img.shields.io/github/license/rafapcarvalho/alurakut)](https://github.com/rafapcarvalho/alurakut/blob/master/README.md)
+[![licence mit](https://img.shields.io/github/license/rafapcarvalho/alurakut)](https://github.com/rafapcarvalho/alurakut/blob/master/LICENSE)
 
 > 🚀: Foi utilizado o template básico com nextjs, para iniciar este projeto.
 
@@ -28,4 +28,4 @@ Deploy na cloud com [Vercel](https://vercel.com/new?utm_source=github&utm_medium
 Veja [Releases](https://github.com/rafapcarvalho/alurakut/releases) para mais detalhes do changelog.
 
 ### Licença
-[MIT License](https://github.com/rafapcarvalho/alurakut/blob/master/LIENSE) © [Rafael Carvalho](https://rafaoak.com/)
+[MIT License](https://github.com/rafapcarvalho/alurakut/blob/master/LICENSE) © [Rafael Carvalho](https://rafaoak.com/)
