@@ -1,6 +1,6 @@
 import MainGrid from '../src/components/MainGrid/index'
 import Box from '../src/components/Box/index'
-import { AlurakutMenu } from '../src/lib/AlurakutCommons'
+import { AlurakutMenu, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons'
 import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations'
 
 function ProfileSidebar(propriedades){
@@ -20,38 +20,42 @@ export default function Home() {
 
   return (
     <>
-    <AlurakutMenu />
-    <MainGrid>
-      <div className="profileArea" style={{ gridArea: 'profileArea' }}>
-        <ProfileSidebar githubUser={usuarioAleatorio} />
-      </div>
-      <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
-      <Box>
-        Bem vindo
-      </Box>
-      </div>
-      <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
-      <ProfileRelationsBoxWrapper>
-        Pessoas da comunidade ({pessoasFavoritas.length})
+      <AlurakutMenu />
+      <MainGrid>
+        <div className="profileArea" style={{ gridArea: 'profileArea' }}>
+          <ProfileSidebar githubUser={usuarioAleatorio} />
+        </div>
+        <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
+        <Box>
+          <h1 className="title">
+            Bem vindo(a)
+          </h1>
 
-        <ul>
-          {pessoasFavoritas.map((itemAtual) => {
-            return (
-            <li>
-              <a href={`/users/${itemAtual}`} key={itemAtual}>
-                <img src={`https://github.com/${itemAtual}.png`} />
-                <span>{itemAtual}</span>
-              </a>
-            </li>    
-            )
-          })}
-        </ul>
-      </ProfileRelationsBoxWrapper>
-      <Box>
-        Comunidades
-      </Box>
-      </div>
-    </MainGrid>
+          <OrkutNostalgicIconSet />
+        </Box>
+        </div>
+        <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
+        <ProfileRelationsBoxWrapper>
+          Pessoas da comunidade ({pessoasFavoritas.length})
+
+          <ul>
+            {pessoasFavoritas.map((itemAtual) => {
+              return (
+              <li>
+                <a href={`/users/${itemAtual}`} key={itemAtual}>
+                  <img src={`https://github.com/${itemAtual}.png`} />
+                  <span>{itemAtual}</span>
+                </a>
+              </li>    
+              )
+            })}
+          </ul>
+        </ProfileRelationsBoxWrapper>
+        <Box>
+          Comunidades
+        </Box>
+        </div>
+      </MainGrid>
   </>
   )
 }
